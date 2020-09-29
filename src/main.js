@@ -14,7 +14,7 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:3001');
+  mainWindow.loadURL('http://localhost:3000');
 
   const isMac = process.platform === 'darwin';
 
@@ -150,9 +150,6 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
 
 // Open File
 async function openFile() {
