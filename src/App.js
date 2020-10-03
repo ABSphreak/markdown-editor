@@ -9,6 +9,7 @@ const { ipcRenderer } = window.require('electron');
 
 const Split = styled.div`
   display: flex;
+  height: 100vh;
 `;
 
 const RenderedWindow = styled.div`
@@ -17,6 +18,7 @@ const RenderedWindow = styled.div`
   padding: 20px;
   color: #fff;
   border-left: 1px solid #302b3a;
+  width: 100%;
 `;
 
 function App() {
