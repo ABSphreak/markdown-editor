@@ -1,0 +1,38 @@
+.ace_editor {
+  background-color: #001427 !important;
+  color: #f4d58d;
+}
+
+.ace_editor .ace_gutter {
+  background: #001427;
+  color: #00a8e8;
+}
+
+.ace_editor .ace_list {
+  color: #d8d8d8;
+}
+
+.ace_editor .ace_gutter-active-line {
+  background-color: #002855;
+  color: #f72585;
+}
+
+.ace_editor .ace_active-line {
+  background-color: #023e7d !important;
+}
+
+.ace_editor .ace_selection {
+  background-color: #212f45 !important;
+}
+
+.ace_editor .ace_heading {
+  color: #82d8d8;
+}
+
+.ace_editor .ace_cursor {
+  color: #00f5d4;
+}
+
+.ace_editor .ace_string {
+  color: #e54b4b;
+}
