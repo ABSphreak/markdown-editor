@@ -17,12 +17,21 @@ const EditorWindow = styled.div`
 `;
 
 const RenderedWindow = styled.div`
-  background-color: #191324;
+  background-color: #001427;
   width: 35%;
   padding: 20px;
   color: #fff;
-  border-left: 1px solid #302b3a;
+  border-left: 1px solid #ff7f51;
   width: 100%;
+  overflow: auto;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ff0054;
+  }
 `;
 
 function App() {
