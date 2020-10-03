@@ -3,12 +3,16 @@ import Markdown from 'markdown-to-jsx';
 import AceEditor from 'react-ace';
 import styled from 'styled-components';
 import 'ace-builds/src-noconflict/mode-markdown';
-import 'ace-builds/src-noconflict/theme-dracula';
+import 'ace-builds/src-noconflict/theme-monokai';
 import './App.css';
 const { ipcRenderer } = window.require('electron');
 
 const Split = styled.div`
   display: flex;
+  height: 100vh;
+`;
+
+const EditorWindow = styled.div`
   height: 100vh;
 `;
 
@@ -33,15 +37,20 @@ function App() {
   return (
     <div className="App">
       <Split>
-        <AceEditor
-          mode="markdown"
-          theme="dracula"
-          onChange={(newContent) => {
-            setLoadedFile(newContent);
-          }}
-          name="markdown_editor"
-          value={loadedFile}
-        />
+        <EditorWindow>
+          <AceEditor
+            fontSize={18}
+            width="50vw"
+            height="100vh"
+            mode="markdown"
+            theme="monokai"
+            onChange={(newContent) => {
+              setLoadedFile(newContent);
+            }}
+            name="markdown_editor"
+            value={loadedFile}
+          />
+        </EditorWindow>
         <RenderedWindow>
           <Markdown>{loadedFile}</Markdown>
         </RenderedWindow>
